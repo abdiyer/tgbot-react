@@ -7,7 +7,9 @@ import Header from './components/Header/Header';
 
 function App() {
 
-  const {tg,onToggleButton} = useTelegram();
+  const {onToggleButton} = useTelegram();
+
+  const tg = window.Telegram.WebApp
 
   useEffect(() => {
     tg.ready();
